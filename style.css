@@ -6,9 +6,31 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(183, 179, 179, 0.75),rgba(0,0,0,0.75)), url(background.png);
+    background-image: linear-gradient(rgba(37, 37, 37, 0.75),rgba(0,0,0,0.75)), url(pixel.gif);
     background-size: cover;
     background-position: center;
+}
+.kaca{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(37, 37, 37, 0.75),rgba(0,0,0,0.75)), url(kaca.gif);
+    background-size: cover;
+    background-position: center;
+}
+.projek{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(37, 37, 37, 0.75),rgba(0,0,0,0.75)), url(projek.gif);
+    background-size: cover;
+    background-position: center;
+}
+.about{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(37, 37, 37, 0.75),rgba(0,0,0,0.75)), url(about.gif);
+    background-size: cover;
+    background-position: center;
+
 }
 .navbar {
 
@@ -33,15 +55,16 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: #0a0a0a;
+    color: #ffffff;
     text-transform: uppercase;
     position: relative;
+    font-weight: bold;
 }
 .navbar ul li::after{
     content: "";
     height: 5px;
     width: 0;
-    background: #161616;
+    background: #05d8d8;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -49,4 +72,58 @@
 }
 .navbar ul li:hover::after{
     width: 100%;
+}
+.content{
+    width: 100%;
+    position:absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-weight: bold;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
 }
